@@ -5,7 +5,7 @@ In order to implement the Skin Cancer Classification and Melanoma Detection usin
 
 Step 1: Download the ISIC Skin Cancer Classification Dataset from: LINK TO BE ADDED 
 Step 2: Execute the "model.ipynb" file in order to train and develop the CNN Model for classification of skin cancer images 
-Step 3: Save the trained model as "model.hdf5" 
+Step 3: Save the trained model as "model.h5" 
 Step 4: Install flask in your system using the command: pip install flask 
 Step 5: Then execute the python file "integrate.py" by running the command: flask integrate.py 
 Step 6: Open up the index.html file from the "Web Application" Directory or by heading over to 127.0.0.5 
