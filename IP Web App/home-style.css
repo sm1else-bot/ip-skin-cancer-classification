@@ -1,0 +1,285 @@
+body{
+  font-family: georgia;
+}
+.active1{
+  background-color: #ddd;
+}
+.header {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+#menu-nav {
+  /*max-width: 1000px;*/
+  /*margin: 130px auto;*/
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 200px;
+  font: normal 300 18px "Roboto", sans-serif;
+  color: white;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.current{
+  font-weight: bold;
+}
+#navigation-bar a:hover {
+  color: #e74c3c;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+
+li {
+	list-style: none;
+}
+.col1 {
+  margin-left: 20px;
+  float: left;
+  column-width: 250px;
+  column-fill: balance;
+  height: auto;
+  font-weight: bold;
+  border-style: dotted;
+  border-width: 5px;
+  border-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.col2 {
+  column-width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.col1 a:link {
+  color: black;
+}
+
+/* visited link */
+.co1 a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.col1 a:hover {
+  color: red;
+}
+
+/* selected link */
+.col1 a:active {
+  color: blue;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(160,0,0,0.6);
+  transition: 0.3s;
+  width: 75%;
+  padding-top: 10px;
+  margin-left: 190px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255,0,0,0.6);
+}
+
+.container1 {
+  padding: 2px 16px;
+}
+blockquote{
+  font-family: verdana;
+  font-size: 25px;
+  font-weight: bold;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: .5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+
+
+.footer {
+  position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.tab {
+  padding-left: 400px;
+}
+.fa-beat {
+animation:fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+0% {
+  transform:scale(1);
+}
+5% {
+  transform:scale(1.25);
+}
+20% {
+  transform:scale(1);
+}
+30% {
+  transform:scale(1);
+}
+35% {
+  transform:scale(1.25);
+}
+50% {
+  transform:scale(1);
+}
+55% {
+  transform:scale(1.25);
+}
+70% {
+  transform:scale(1);
+}
+}

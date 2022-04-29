@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.image import load_img , img_to_array
 
 app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = load_model(os.path.join(BASE_DIR , 'model.hdf5'))
+model = load_model(os.path.join(BASE_DIR , 'model_saved.h5'))
 
 
 ALLOWED_EXT = set(['jpg' , 'jpeg' , 'png' , 'jfif'])
@@ -17,7 +17,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in ALLOWED_EXT
 
-classes = ['benign' ,'malignant']
+classes = ['Melanoma' ,'Nevus' , 'Keratosis']
 
 
 def predict(filename , model):
@@ -51,7 +51,7 @@ def predict(filename , model):
 
 @app.route('/')
 def home():
-        return render_template("index.html")
+        return render_template("/IP Web APP/index.html")
 
 @app.route('/success' , methods = ['GET' , 'POST'])
 def success():

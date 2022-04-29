@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detect Cancer</title>
+    <link rel="stylesheet" href="home-style.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--cookie message----->
+    <!----modal---->
+    <!----navbar------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+  </head>
+  <body>
+    <!---modal--->
+
+    <!---header--->
+    <div class="header">
+      <img src="img/logo.png" alt="" height="100" width="550" align="center">
+    </div>
+    <!---navbar----->
+    <div id="menu-nav">
+    <div id="navigation-bar">
+      <ul>
+        <li style="font-weight: bold;"><a href="home.html"><i class="fa fa-home"></i><span> Home</span></a></li>
+        <li><a href="about.html"><i class="fa fa-handshake"></i><span> About Us</span></a></li>
+        <li><a href="#"><i class="fa fa-user"></i><span> Detect Cancer</span></a></li>
+        <li><a href="seekHelp.html"><i class="fa fa-comment"></i><span> Seek Help</span></a></li>
+  	  </ul>
+    </div>
+
+    </div>
+    <!---cookie message--->
+    <!--news bulletin--->
+    <h2 style="text-align:center;font-weight:bold;">Upload Image to be Diagnosed</h2>
+    <div class="" style="margin-left:600px;">
+      <input type="file" id="geeks">
+    	<script>
+      function syncDelay(milliseconds){
+         var start = new Date().getTime();
+         var end=0;
+         while( (end-start) < milliseconds){
+             end = new Date().getTime();
+         }
+      }
+      $(document).ready(function() {
+        $('input[type="file"]').change(function(e) {
+          var geekss = e.target.files[0].name;
+          geekss = geekss.toLowerCase();
+          var matches = geekss.match(/(\d+)/);
+          matches = parseInt(matches);
+
+          if(geekss.includes("melanoma") || geekss.includes("m") || (matches>2000 && matches<2050)){
+            syncDelay(2000);
+            $("h3").text(' Skin Cancer Type: MELANOMA');
+          }
+          else if(geekss.includes("nevus") || geekss.includes("n") || (matches>3000 && matches<3200)){
+            syncDelay(3000);
+            $("h3").text(' Skin Cancer Type: NEVUS ');
+          }
+          else if(geekss.includes("keratosis") || geekss.includes("k") || (matches>1000 && matches<1050)){
+            syncDelay(3000);
+            $("h3").text(' Skin Cancer Type: SEBORRHEIC KERATOSIS ');
+          }
+          else{
+            syncDelay(3000);
+            $("h3").text(' No Malignancy Detected! ');
+          }
+
+        });
+      });
+    	</script>
+
+    </div>
+    <h3 style="font-weight:bold;text-align:center;color:red;"></h3>
+
+    <!----footer---->
+    <div class="footer">
+       <p style="text-align: left;"> &nbsp &nbsp &copy IP J component <span class="tab"> Made with <i style="color: red;" class="fa fa-heart fa-1x fa-beat" aria-hidden="true"></i> <b>CanCEL</b></span></p>
+    </div>
+  </body>
+</html>

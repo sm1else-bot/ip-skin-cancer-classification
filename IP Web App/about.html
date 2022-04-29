@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link rel="stylesheet" href="home-style.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--cookie message----->
+    <!----modal---->
+    <!----navbar------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+  </head>
+  <style media="screen">
+
+  .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #9c9994
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+  </style>
+  <body>
+    <!---header--->
+    <div class="header">
+      <img src="img/logo.png" alt="" height="100" width="550" align="center">
+    </div>
+    <!---navbar----->
+    <div id="menu-nav">
+    <div id="navigation-bar">
+      <ul>
+        <li style="font-weight: bold;"><a href="home.html"><i class="fa fa-home"></i><span> Home</span></a></li>
+        <li><a href="#"><i class="fa fa-handshake"></i><span> About Us</span></a></li>
+        <li><a href="detectCancer.html"><i class="fa fa-user"></i><span> Detect Cancer</span></a></li>
+        <li><a href="seekHelp.html"><i class="fa fa-comment"></i><span> Seek Help</span></a></li>
+      </ul>
+    </div>
+
+    </div>
+    <div class="about-section" style=" background-color: #9c9994;">
+  <h1 style="font-weight: bolder;">Welcome Aboard</h1>
+  <p style="font-family: verdana; font-weight:bolder;">
+    This application will be developed using programming languages which include Python, JavaScript, HTML, and CSS. The input and image set for this project would include a huge dataset of thousands of image files. The image dataset used for training would consist of images of skin which have been affected by Melanoma at various stages and the dataset will be pulled from a medical repository in Kaggle. The user can upload an image of a portion of his/her skin and the trained detection model will be loaded to output the prediction rate of the skin cancer for the uploaded image. The prediction rate will be displayed to the user and if the prediction of occurrence of Melanoma Cancer exceeds a threshold of 75%, then the user will be intimated regarding the same as they fall under the high-risk category.
+  </p>
+  <p style="font-family: verdana; font-weight:bolder;">
+    Furthermore, for high-risk category users, the application will prompt the user to provide their location and other basic details and will display the details and locations of nearby hospitals which specialize in dermatology detection and related services which would encourage the users to avail the required services to cure their disease at the earliest. Furthermore, the application would also be incorporated with a user-friendly and interactive chatbot which would further assist the user on various queries and clarifications related to cancer, it’s detection and the latest news and updates in this domain.
+  </p>
+</div>
+
+<h2 style="text-align:center; font-weight:bolder;">Our Team</h2>
+<div class="row" style="margin-left:95px;margin-bottom:50px;">
+  <div class="column">
+    <div class="card" style="width: 300px;">
+      <img src="img/meghna.png" alt="Jane" style="width:300px; height: 250px; padding: 20px;">
+      <div class="container">
+        <h2>Meghna Manoj Nair</h2>
+        <p class="title">Co-Founder</p>
+        <p>Coding Enthusiast pursuing CSE course at VIT Chennai</p>
+        <p>mnairmeghna@gmail.com</p>
+        <p><button class="button">+91 93215784</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="width: 300px;">
+      <img src="img/harika.png" alt="Mike" style="width:300px; height: 250px; padding: 20px;" >
+      <div class="container">
+        <h2>G Harika Sai</h2>
+        <p class="title">Co-Founder</p>
+        <p>Coding Enthusiast pursuing CSE course at VIT Chennai</p>
+        <p>gharikasai@gmail.com</p>
+        <p><button class="button">+91 93219845</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="width: 300px;">
+      <img src="img/Jessenth.jpg" alt="Mike" style="width:300px; height: 250px; padding: 20px;" >
+      <div class="container">
+        <h2>Jessenth Ebenezer</h2>
+        <p class="title">Co-Founder</p>
+        <p>Coding Enthusiast pursuing CSE course at VIT Chennai</p>
+        <p>jessentheb@gmail.com</p>
+        <p><button class="button">+91 93219845</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+   <p style="text-align: left;"> &nbsp &nbsp &copy IP J component <span class="tab"> Made with <i style="color: red;" class="fa fa-heart fa-1x fa-beat" aria-hidden="true"></i> <b>CanCEL</b></span></p>
+</div>

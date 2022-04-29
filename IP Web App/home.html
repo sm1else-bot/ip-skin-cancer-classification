@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="home-style.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--cookie message----->
+    <!----modal---->
+    <!----navbar------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+  </head>
+  <body>
+    <!---modal--->
+
+    <!---header--->
+    <div class="header">
+      <img src="img/logo.png" alt="" height="100" width="550" align="center">
+    </div>
+    <!---navbar----->
+    <div id="menu-nav">
+    <div id="navigation-bar">
+      <ul>
+        <li style="font-weight: bold; font-style: italic;"><a href="#"><i class="fa fa-home"></i><span> Home</span></a></li>
+        <li><a href="about.html"><i class="fa fa-handshake"></i><span> About Us</span></a></li>
+        <li><a href="detectCancer.html"><i class="fa fa-user"></i><span> Detect Cancer</span></a></li>
+        <li><a href="seekHelp.html"><i class="fa fa-comment"></i><span> Seek Help</span></a></li>
+  	  </ul>
+    </div>
+
+    </div>
+    <!---cookie message--->
+    <!--news bulletin--->
+    <div class="row">
+      <div class="col1">
+       <p style="font-size: 25px; font-style: bolder; text-align: center;" >News Bulletin</p>
+       <a href="https://www.marktechpost.com/2022/04/18/google-researchers-introduce-maxim-multi-axis-mlp-based-architecture-for-image-processing/">Google Researcher Introduce MAXIM</a>
+       <br>
+       <br>
+       <a href="https://www.azom.com/news.aspx?newsID=58819">Novel Denoising Techniques</a>
+       <br>
+       <br>
+       <a href="https://www.sciencedaily.com/releases/2022/02/220211102608.htm">Analyzing Cells in Microscopy <br> Videos</a>
+       <br>
+       <br>
+       <a href="https://www.indianweb2.com/2022/02/tech-explained-how-do-night-vision.html">Night Vision Goggles</a>
+       <br>
+       <br>
+       <a href="https://techcrunch.com/2022/03/02/walmart-launches-a-i-powered-virtual-clothing-try-on-technology-for-online-shoppers/">AI Powered Virtual Clothing <br> By Walmart</a>
+       <br>
+       <br>
+       <a href="https://www.prnewswire.com/in/news-releases/mobile-medical-imaging-systems-improving-care-accessibility-and-convenience-for-patients-890643278.html">Mobile Medical Imaging</a>
+       <br>
+       <br>
+       <a href=" https://www.gizmochina.com/2022/02/28/tecno-camon-series-to-debut-the-rgbw-sensor-with-an-in-house-image-processing-algorithm/">Tecno Camon Series to <br> Debut RGBW</a>
+       <br>
+       <br>
+       <a href="https://www.marktechpost.com/2022/02/19/meta-ai-researchers-upgrade-their-machine-learning-based-image-segmentation-models-for-better-virtual-backgrounds-in-video-calls-and-metaverse/">ML Based Zoom Backgrounds</a>
+      </div>
+
+      <div class="col2" >
+        <div class="slideshow-container">
+           <div class="mySlides fade">
+             <img src="img/s1.jpg" style="width:100%" height="500">
+             <div class="text"></div>
+           </div>
+           <div class="mySlides fade">
+             <img src="img/s2.jpg" style="width:100%" height="500">
+              <div class="text"></div>
+           </div>
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+      </div>
+    </div>
+    <div class="row" style="text-align: center;" style="background-color: #474e5d;">
+      <h1 style="font-size: 40px;"><b>Our Motivation</b></h1>
+      <div class="card">
+        <div class="container1">
+           <p>
+            Skin cancer is the most prevalent type of cancer. Melanoma, specifically, is responsible for 75% of skin cancer deaths, despite being the least common skin cancer. Melanoma is a deadly disease, but if caught early, most melanomas can be cured with minor surgery. Considering the drastic and deadly effects of skin cancer, we have decided to take up this domain of Melanoma Detection using Image Processing and Deep Learning algorithms in order to prevent a further incline in the death rates caused by this malicious disease. This application will be developed using programming languages which include Python, JavaScript, HTML, and CSS. The input and image set for this project would include a huge dataset of thousands of image files.
+           </p>
+           <br>
+           <p>
+            The image dataset used for training would consist of images of skin which have been affected by Melanoma at various stages and the dataset will be pulled from a medical repository in Kaggle. The user can upload an image of a portion of his/her skin and the trained detection model will be loaded to output the prediction rate of the skin cancer for the uploaded image. The prediction rate will be displayed to the user and if the prediction of occurrence of Melanoma Cancer exceeds a threshold of 75%, then the user will be intimated regarding the same as they fall under the high-risk category. Furthermore, for high-risk category users, the application will prompt the user to provide their location and other basic details and will display the details and locations of nearby hospitals which specialize in dermatology detection and related services which would encourage the users to avail the required services to cure their disease at the earliest.
+           </p>
+           <blockquote><p class="quotation">
+             Image Processing is one of the most powerful weapons you can use to to detect skin cancers at an early stage.</p>
+           </blockquote>
+        </div>
+       </div>
+    </div>
+    <!----footer---->
+    <div class="footer">
+       <p style="text-align: left;"> &nbsp &nbsp &copy IP J component <span class="tab"> Made with <i style="color: red;" class="fa fa-heart fa-1x fa-beat" aria-hidden="true"></i> <b>CanCEL</b></span></p>
+    </div>
+  </body>
+</html>
